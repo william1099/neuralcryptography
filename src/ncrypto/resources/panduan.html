@@ -1,0 +1,88 @@
+<html>
+<head>
+<style>
+	body {
+		padding:10px;
+		text-align: center;
+	}
+	img {
+		width:50%;
+		height:50%;
+	}
+
+	.content {
+		text-align: left;
+	}
+	.imgform {
+		float:left;
+		width:30%;
+		margin:20px; 
+	}
+
+	 .clearfix:before {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+</style>
+<title>Panduan</title>
+</head>
+<body>
+
+<h1>Home</h1>
+<img src="sshome2.jpg"></img>
+
+<div class="content">
+<h2>Keterangan</h2>
+<ol>
+<li><b>Enkripsi</b> - Form yang digunakan untuk melakukan enkripsi citra</li>
+<li><b>Dekripsi</b> - Form yang digunakan untuk melakukan dekripsi citra</li>
+<li><b>Report</b> - Form yang digunakan untuk menampilkan detail (waktu sinkronisasi, epoch, bobot, dll) dan perhitungan TPM</li>
+<li><b>Inisialisasi TPM</b> - Button yang berfungsi untuk menginisialisasi TPM dengan nilai K, N, dan L yang didefinisikan oleh user</li>
+<li><b>Reset</b> - Button yang berfungsi untuk menghapus TPM</li>
+<li><b>Mulai</b> - Button untuk memulai sinkronisasi antar kedua TPM. Weight (bobot) akhir akan ditampilkan pada komponen text area kunci</li>
+<li><b>Hapus</b> - Button untuk menghapus kunci</li>
+<li><b>Simpan</b> - Button untuk menyimpan kunci</li>
+</ol>
+</div>
+
+<div style="text-align:center">
+<img class="imgform" src="ssenk2.jpg"></img>
+<img class="imgform" src="ssde2.jpg"></img>
+</div>
+
+<div class="clearfix content">
+<h2>Keterangan</h2>
+<p>1. <b>Pilih Gambar</b> Button untuk memilih gambar/citra dengan ekstensi .png. Setelah citra dipilih, jenis, ukuran dan dimensi citra akan ditampilkan</p>
+<p>2. <b>Pilih Kunci</b> Button untuk memilih kunci yang dihasilkan dari proses sinkronisasi. Kunci yang dipilih akan ditampilkan pada komponen text area kunci</p>
+<p>3. <b>Enkripsi (Left)</b> Button untuk melakukan enkripsi dengan algoritma Vigenere Cipher</p>
+<p>3. <b>Dekripsi (Right)</b> Button untuk melakukan dekripsi dengan algoritma Vigenere Cipher</p>
+<p>4. <b>Save</b> Button untuk menyimpan citra hasil enkripsi/dekripsi</p>
+</div>
+
+<img style="width:20%" src="ssreport2.jpg"></img>
+
+<div class="content">
+<h2>Keterangan</h2>
+<p>1. <b>Pilih Kunci</b> Button untuk memilih kunci yang dihasilkan dari proses sinkronisasi kedua TPM. Data yang akan ditampilkan meliputi data tanggal, waktu, jumlah iterasi dan hasil perhitungan TPM.</p>
+</div>
+
+<br/>
+<div class="content">
+<h2>Langkah - Langkah</h2>
+<p>1. Setiap user memilih nilai K, N dan L</p>
+<p>2. User menginisialisasi TPM dengan mengklik tombol <b>Inisialisasi TPM</b>. TPM dengan bobot acak akan ditampilkan.</p>
+<p>3. User melakukan sinkronisasi dengan mengklik tombol <b>Mulai</b>. Jika proses sinkronisasi telah selesai, kunci akan ditampilkan pada komponen textarea kunci.</p>
+<p>4. Simpan kunci dengan mengklik tombol <b>Simpan</b></p>
+<p>5. Klik Form Enkripsi untuk melakukan enkripsi gambar dan klik Form Dekripsi untuk melakukan dekripsi gambar</p>
+<p>6. Klik Form Report untuk melihat data yang berkaitan dengan kunci seperti waktu sinkronisasi, jumlah iterasi hingga perhitungan TPM.</p>
+
+</div>
+
+<br/><br/>
+
+<h1>Selesai</h1>
+</body>
+</html>
